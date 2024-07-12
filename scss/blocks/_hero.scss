@@ -1,0 +1,171 @@
+.hero{
+    margin-top: 74px;
+    margin-bottom: 75px;
+}
+
+.hero-wrapper {
+    @include display($items:none, $space:none, $gap:0px);
+}
+.hero__wrapper-contaent {
+    max-width: 546px;
+    margin-top: 78px;
+}
+.hero-phone-img{
+    margin-left: 208px;
+}
+
+.hero-title {
+    @include textStyle($FS:72px, $FW:400, $LH:72px, $MB:24px, $CLR:#36536B);
+    font-family: "DM Serif Display";
+}
+.hero-label {
+    width: 445px;
+    height: 48px;
+    position: relative;
+    // background-color: red;
+}
+.hero-label-inpit {
+    border: none;
+    border-radius: 24px;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    background: rgb(251, 252, 254);
+    height: 48px;
+    width: 445px;
+}
+.hero-label-inpit::placeholder{
+    @include textStyle($FS:15px, $FW:700, $LH:18px, $MB:0px, $CLR:#36536B);
+    padding-left: 27px;
+}
+.hero-label-button {
+    position: absolute;
+    left: 265px;
+    // right: 0;
+    width: 180px;
+    padding: 15px 24px;
+    border-radius: 24px;
+    border: none;
+    background-color: rgb(186, 66, 112);
+    @include textStyle($FS:15px, $FW:600, $LH:18px, $MB:0px, $CLR:#FBFCFE);
+}
+.hero-text {
+    margin-top: 16px;
+    margin-left: 27px;
+    @include textStyle($FS:15px, $FW:700, $LH:18px, $MB:0px, $CLR:#6C8294);
+}
+.hero-link{
+    @include textStyle($FS:15px, $FW:700, $LH:18px, $MB:0px, $CLR:#36536B);
+}
+.hero-phone-img2{
+    display: none;
+}
+
+.hero-label2{
+    display: none;
+}
+
+@media(max-width:1000px){
+    .hero-phone-img{
+        display: none;
+    }
+    .hero-phone-img2{
+        display: block;
+        width: 155px;
+        height: 299px;
+        margin: 0 auto;
+        margin-bottom: 48px;
+    }
+    
+    .hero-wrapper {
+        @include display($items:none, $space:center, $gap:0px);
+    }
+    
+    .hero-title{
+        max-width: 508px;
+        @include textStyle($FS:48px, $FW:400, $LH:56px, $MB:22px, $CLR:#36536B);
+        margin-left: 25px;
+    }
+    
+    .hero{
+        margin-top: 48px;
+    }
+    
+    .hero-text {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 16px;
+    }
+    
+    .hero-label {
+        margin-left: 50px;
+    }
+}
+
+@media(max-width:600px){
+    .hero-phone-img{
+        display: none;
+    }
+    .hero-phone-img2{
+        display: block;
+        width: 124px;
+        height: 239px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+    
+    .hero-wrapper {
+        @include display($items:none, $space:center, $gap:0px);
+        max-width: 600px;
+    }
+    
+    .hero-title{
+        max-width: 345px;
+        @include textStyle($FS:32px, $FW:400, $LH:36px, $MB:22px, $CLR:#36536B);
+        margin: 0 auto;
+    }
+    
+    .hero{
+        margin-top: 48px;
+    }
+    
+    .hero-text {
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 16px;
+    }
+    
+    .hero-label2{
+        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-label{
+        display: none;
+    }
+    
+    .hero-label-inpit2{
+        border: none;
+        margin-top: 24px;
+        border-radius: 24px;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        background: rgb(251, 252, 254);
+        height: 48px;
+        max-width: 600px;
+    }
+    .hero-label-button2 {
+        left: 265px;
+        // right: 0;
+        max-width: 600px;
+        margin-top: 16px;
+        padding: 15px 24px;
+        border-radius: 24px;
+        border: none;
+        background-color: rgb(186, 66, 112);
+        @include textStyle($FS:15px, $FW:600, $LH:18px, $MB:0px, $CLR:#FBFCFE);
+    }
+    .hero-label-inpit2::placeholder{
+        @include textStyle($FS:15px, $FW:700, $LH:18px, $MB:0px, $CLR:#36536B);
+        padding-left: 27px;
+    }
+}
+
